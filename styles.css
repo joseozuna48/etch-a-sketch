@@ -1,0 +1,115 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* *********************************************** */
+
+  :root{
+    --white: #ececec; 
+    --light-green: #9fd3c7; 
+    --dark-blue: #142d4c;
+    --light-blue: #385170; 
+  }
+
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: var(--white);
+
+  }
+
+  header,footer{
+    background-color: var(--dark-blue);
+  }
+
+  header{
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  main{
+    flex-grow: 1;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    background-color: var(--white);
+    width: 90vw;
+    max-width: 800px;
+    height: 70vh;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .settings-section{
+    background-color: var(--dark-blue);
+    width: 20%;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  .settings{
+    background-color: var(--light-green);
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+
+  }
+
+  .sketch-section{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sketch-grid{
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 95%;
+    height: 95%;
+  }
+
+
+  footer{
+   height: 50px;
+  }
+	
