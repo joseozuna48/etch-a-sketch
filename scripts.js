@@ -1,6 +1,7 @@
 const sketch_section = document.querySelector(".sketch-grid");
 let slider = document.querySelector(".slider");
 let gridSize = document.querySelector(".gridSize");
+let resetBtn = document.querySelector(".resetBtn");
 
 
 function createGrid(num) {
@@ -19,7 +20,7 @@ function createGrid(num) {
     }
 }
 
-function colorBackground(){
+function colorBackground(color){
     this.style.backgroundColor  = "black";
 }
 
@@ -29,18 +30,18 @@ function deleteGrid (){
     }
 }
 
-
-
-slider.addEventListener("mouseup",()=>{
-    
+function resetGrid(){
     deleteGrid();
     createGrid(slider.value);
-    
-});
+}
+
+
+slider.addEventListener("mouseup",resetGrid);
 
 slider.addEventListener("input",()=>{
     gridSize.textContent = `${slider.value} X ${slider.value} `;
-})
+});
 
+resetBtn.addEventListener("click",resetGrid);
 
 createGrid(16);

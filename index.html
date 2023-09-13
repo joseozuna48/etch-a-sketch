@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,27 @@
     <script src="scripts.js" defer></script>
     <title>Etch-a-sketch</title>
 </head>
+
 <body>
     <header>Etch-a-sketch</header>
     <main>
         <div class="container">
             <div class="settings-section">
+                <div class="settings resetSection">
+                    Reset grid
+                    <button  class="resetBtn">
+                        <img src="icons/reset.png" width="30px" alt="reset"class="resetImg">
+                    </button>
+                </div>
                 <div class="settings">
-                    Select grid size
-                    16x16
+                    Select grid size:
+                    <span class="gridSize">16 X 16</span>
+                    <input type="range" min="2" max="100" value="16" class="slider">
+                </div>
+
+                <div class="settings">
+                    Select your color:
+
                 </div>
             </div>
             <div class="sketch-section">
@@ -25,4 +39,5 @@
     </main>
     <footer></footer>
 </body>
+
 </html>
