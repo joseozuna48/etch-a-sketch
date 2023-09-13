@@ -9,11 +9,16 @@ function createGrid(num) {
     for (let i = 0; i < (num * num); i++) {
         let div = document.createElement("div");
 
-        div.style.border = "1px solid black";
+        div.addEventListener("mouseenter", colorBackground);
 
         sketch_section.appendChild(div);
+        
 
     }
 }
 
-createGrid(10);
+function colorBackground(){
+    this.style.backgroundColor  = "black";
+}
+
+createGrid(50);

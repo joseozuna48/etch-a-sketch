@@ -114,4 +114,8 @@
   footer{
    height: 50px;
   }
+
+  .hovered{
+    background-color: red;
+  }
 	
