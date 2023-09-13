@@ -83,6 +83,8 @@
     justify-content: center;
     align-items: center;
     color: black;
+
+    gap: 10px;
   }
 
   .settings{
@@ -91,6 +93,13 @@
     border-radius: 10px;
     padding: 10px;
 
+  }
+
+  .slider{
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 10px;
   }
 
   .sketch-section{
