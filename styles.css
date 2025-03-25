@@ -148,4 +148,40 @@
   .hovered{
     background-color: red;
   }
+
+
+  @media screen and (max-width:990px) {
+    .container{
+      flex-direction: column-reverse;
+
+    }
+
+    .settings-section{
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+      border-radius: 0px 0px 10px 10px;
+      gap: 0;
+      padding: 20px;
+    }
+
+    .settings{
+      width: 10rem;
+    }
+
+  }
+
+  @media screen and (max-width:500px) {
+    .settings-section{
+      flex-direction: ;
+    }
+
+    .settings{
+      width: 10rem;
+    }
+
+    .settings-section{
+      gap:20px;
+    }
+  }
 	
