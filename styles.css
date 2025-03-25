@@ -153,7 +153,6 @@
   @media screen and (max-width:990px) {
     .container{
       flex-direction: column-reverse;
-
     }
 
     .settings-section{
@@ -171,9 +170,9 @@
 
   }
 
-  @media screen and (max-width:500px) {
+  @media screen and (max-width:620px) {
     .settings-section{
-      flex-direction: ;
+      flex-direction: column;
     }
 
     .settings{
